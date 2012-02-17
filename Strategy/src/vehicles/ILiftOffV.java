@@ -1,6 +1,6 @@
 package vehicles;
 
-public class VLF implements LiftOff {
+public class ILiftOffV implements LiftOff {
 
 	/* (non-Javadoc)
 	 * @see vehicles.LiftOff#howILiftOff()

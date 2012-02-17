@@ -7,7 +7,7 @@ package vehicles;
  * @author oded
  *
  */
-public class ILH implements LiftOff {
+public class ILiftOffH implements LiftOff {
 
 	/* (non-Javadoc)
 	 * @see vehicles.LiftOff#howILiftOff()

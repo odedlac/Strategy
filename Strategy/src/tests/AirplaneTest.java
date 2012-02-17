@@ -10,11 +10,11 @@ import org.junit.Test;
 import vehicles.Airplane;
 import vehicles.FFJ;
 import vehicles.Flying;
-import vehicles.IDLO;
-import vehicles.ILH;
+import vehicles.IDontLiftOff;
+import vehicles.ILiftOffH;
 import vehicles.LiftOff;
-import vehicles.IFLPP;
-import vehicles.VLF;
+import vehicles.IFlyLikePP;
+import vehicles.ILiftOffV;
 import vehicles.IDontFly;
 
 /**
@@ -30,7 +30,7 @@ public class AirplaneTest {
 		String stringReturned = null;
 		
 		Flying fly = new FFJ();
-		LiftOff liftOff = new VLF();
+		LiftOff liftOff = new ILiftOffV();
 
 		Airplane classUnderTest = new Airplane(liftOff,fly);
 
@@ -48,7 +48,7 @@ public class AirplaneTest {
 		String stringReturned = null;
 		
 		Flying fly = new IDontFly();
-		LiftOff liftOff = new VLF();
+		LiftOff liftOff = new ILiftOffV();
 
 		Airplane classUnderTest = new Airplane(liftOff,fly);
 
@@ -64,8 +64,8 @@ public class AirplaneTest {
 		String expectedOutput = "Like a passenger airplane";
 		String stringReturned = null;
 		
-		Flying fly = new IFLPP();
-		LiftOff liftOff = new VLF();
+		Flying fly = new IFlyLikePP();
+		LiftOff liftOff = new ILiftOffV();
 
 		Airplane classUnderTest = new Airplane(liftOff,fly);
 
@@ -83,7 +83,7 @@ public class AirplaneTest {
 		String stringReturned = null;
 
 		Flying fly = new FFJ();
-		LiftOff liftOff = new VLF();
+		LiftOff liftOff = new ILiftOffV();
 
 		Airplane classUnderTest = new Airplane(liftOff,fly);
 
@@ -100,7 +100,7 @@ public class AirplaneTest {
 		String stringReturned = null;
 
 		Flying fly = new FFJ();
-		LiftOff liftOff = new IDLO();
+		LiftOff liftOff = new IDontLiftOff();
 
 		Airplane classUnderTest = new Airplane(liftOff,fly);
 
@@ -117,7 +117,7 @@ public class AirplaneTest {
 		String stringReturned = null;
 
 		Flying fly = new FFJ();
-		LiftOff liftOff = new ILH();
+		LiftOff liftOff = new ILiftOffH();
 
 		Airplane classUnderTest = new Airplane(liftOff,fly);
 
