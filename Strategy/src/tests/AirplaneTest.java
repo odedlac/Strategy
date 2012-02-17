@@ -13,9 +13,9 @@ import vehicles.Flying;
 import vehicles.IDLO;
 import vehicles.ILH;
 import vehicles.LiftOff;
-import vehicles.PassengerPlane;
+import vehicles.IFLPP;
 import vehicles.VLF;
-import vehicles.ModelAirPlane;
+import vehicles.IDontFly;
 
 /**
  * @author oded
@@ -47,7 +47,7 @@ public class AirplaneTest {
 		String expectedOutput = "I don't Fly";
 		String stringReturned = null;
 		
-		Flying fly = new ModelAirPlane();
+		Flying fly = new IDontFly();
 		LiftOff liftOff = new VLF();
 
 		Airplane classUnderTest = new Airplane(liftOff,fly);
@@ -64,7 +64,7 @@ public class AirplaneTest {
 		String expectedOutput = "Like a passenger airplane";
 		String stringReturned = null;
 		
-		Flying fly = new PassengerPlane();
+		Flying fly = new IFLPP();
 		LiftOff liftOff = new VLF();
 
 		Airplane classUnderTest = new Airplane(liftOff,fly);

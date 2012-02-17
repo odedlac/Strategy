@@ -3,18 +3,19 @@
  */
 package vehicles;
 
+
 /**
  * @author oded
  *
  */
-public class PassengerPlane implements Flying {
+public class IDontFly implements Flying {
 
 	/* (non-Javadoc)
 	 * @see vehicles.Flying#howIFly()
 	 */
 	@Override
 	public String howIFly() {
-		return "Like a passenger airplane";
+		return "I don't Fly";
 	}
 
 }
