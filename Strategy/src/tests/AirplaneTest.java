@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import vehicles.Airplane;
-import vehicles.FFJ;
+import vehicles.IFlyLikeFJ;
 import vehicles.Flying;
 import vehicles.IDontLiftOff;
 import vehicles.ILiftOffH;
@@ -29,7 +29,7 @@ public class AirplaneTest {
 		String expectedOutput = "Like a fighter jet";
 		String stringReturned = null;
 		
-		Flying fly = new FFJ();
+		Flying fly = new IFlyLikeFJ();
 		LiftOff liftOff = new ILiftOffV();
 
 		Airplane classUnderTest = new Airplane(liftOff,fly);
@@ -82,7 +82,7 @@ public class AirplaneTest {
 		String expectedOutput = "Vertically";
 		String stringReturned = null;
 
-		Flying fly = new FFJ();
+		Flying fly = new IFlyLikeFJ();
 		LiftOff liftOff = new ILiftOffV();
 
 		Airplane classUnderTest = new Airplane(liftOff,fly);
@@ -99,7 +99,7 @@ public class AirplaneTest {
 		String expectedOutput = "I don't LiftOff";
 		String stringReturned = null;
 
-		Flying fly = new FFJ();
+		Flying fly = new IFlyLikeFJ();
 		LiftOff liftOff = new IDontLiftOff();
 
 		Airplane classUnderTest = new Airplane(liftOff,fly);
@@ -116,7 +116,7 @@ public class AirplaneTest {
 		String expectedOutput = "Horizontally";
 		String stringReturned = null;
 
-		Flying fly = new FFJ();
+		Flying fly = new IFlyLikeFJ();
 		LiftOff liftOff = new ILiftOffH();
 
 		Airplane classUnderTest = new Airplane(liftOff,fly);
